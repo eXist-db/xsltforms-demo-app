@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examples>
+    <example id="1">
+        <title>Hello World</title>
+        <document-name>hello.xhtml</document-name>
+        <group>1</group>
+        <order>1</order>
+        <description/>
+    </example>
+    <example id="2">
+        <title>Address Form</title>
+        <document-name>address.xhtml</document-name>
+        <group>1</group>
+        <order>8</order>
+        <description/>
+    </example>
+    <example id="3">
+        <title>Advanced Hello</title>
+        <document-name>hello2.xml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <data-file>xforms-example-hello2.xml</data-file>
+        <description>Simple Load/Save Example</description>
+    </example>
+    <example id="4">
+        <title>Piechart</title>
+        <document-name>piechart.xml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <description>Piechart</description>
+    </example>
+    <example id="5">
+        <title>Gauges</title>
+        <document-name>gauges.xml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <description>Gauges</description>
+    </example>
+    <!--<example id="6">
+        <title>Gantt Chart</title>
+        <document-name>gantt.xml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <description></description>
+    </example>-->
+    <example id="7">
+        <title>Spreadsheet</title>
+        <document-name>spreadsheet.xml</document-name>
+        <group>2</group>
+        <order>1</order>
+        <description/>
+    </example>
+    <example id="8">
+        <title>Balance</title>
+        <document-name>balance.xml</document-name>
+        <group>2</group>
+        <order>2</order>
+        <description/>
+    </example>
+    <example id="9">
+        <title>Calculator</title>
+        <document-name>calculator.xml</document-name>
+        <group>2</group>
+        <order>3</order>
+        <description/>
+    </example>
+    <example id="10">
+        <title>Bookmarks</title>
+        <document-name>bookmarks.xml</document-name>
+        <group>2</group>
+        <order>4</order>
+        <description/>
+    </example>
+    <!--<example id="11">
+        <title>Subforms</title>
+        <document-name>writers.xml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <description></description>
+    </example>-->
+    <example id="12">
+        <title>Contacts</title>
+        <document-name>contact.xml</document-name>
+        <group>2</group>
+        <order>5</order>
+        <description/>
+    </example>
+    <example id="13">
+        <title>Wikipedia Opensearch</title>
+        <document-name>wikipediasearch.xml</document-name>
+        <group>2</group>
+        <order>5</order>
+        <description>It searches for page titles beginning with the entered prefix, for use in completion of input in a search box or the like.</description>
+    </example>
+    <example id="14">
+        <title>TinyMCE</title>
+        <document-name>tinymce.xml</document-name>
+        <group>2</group>
+        <order>6</order>
+        <description/>
+    </example>
+    <example id="15">
+        <title>Input with hints</title>
+        <document-name>input.xml</document-name>
+        <group>1</group>
+        <order>2</order>
+        <description/>
+    </example>
+    <example id="16">
+        <title>Incremental</title>
+        <document-name>incremental.xhtml</document-name>
+        <group>1</group>
+        <order>3</order>
+        <description/>
+    </example>
+    <example id="17">
+        <title>XPath Functions</title>
+        <document-name>xpath.xhtml</document-name>
+        <group>1</group>
+        <order>4</order>
+        <description/>
+    </example>
+    <example id="18">
+        <title>Bind</title>
+        <document-name>bind.xhtml</document-name>
+        <group>1</group>
+        <order>5</order>
+        <description/>
+    </example>
+    <example id="19">
+        <title>Input Width</title>
+        <document-name>input-width.xhtml</document-name>
+        <group>1</group>
+        <order>6</order>
+        <description/>
+    </example>
+    <example id="20">
+        <title>Secret</title>
+        <document-name>secret.xhtml</document-name>
+        <group>1</group>
+        <order>7</order>
+        <description/>
+    </example>
+</examples>
