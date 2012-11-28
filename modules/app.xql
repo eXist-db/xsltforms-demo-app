@@ -17,9 +17,8 @@ declare function app:list-examples($node as node(), $model as map(*), $group as 
             for $example in doc(concat($config:app-data, "/examples.xml"))//example[group eq $group]
                 let $form := $example/document-name/text()
                 let $title := $example/title
-                    order by number($example/order)            
             return
                 <li>
-                    <a href="modules/form.xq?form={$form}" target="_blank">{ $title/text() }</a>
+                    <a href="modules/form.xq?form={$form}" target="_blank">{$title/text()}</a>
                 </li>    
 };

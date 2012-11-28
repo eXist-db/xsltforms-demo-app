@@ -20,7 +20,7 @@
     <body>
         <h1>Colored Flags</h1>
         <xf:repeat nodeset="color">
-            <xf:output value="@name"/>:&#160;<xf:include src="flag.svg"/>
+            <xf:output value="@name"/>:&#160;<xf:include src="/exist/rest/db/apps/XSLTForms-Demo/data/flag.svg"/>
         </xf:repeat>
     </body>
 </html>

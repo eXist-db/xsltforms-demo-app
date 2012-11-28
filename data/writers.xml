@@ -43,7 +43,7 @@
                     <xforms:label>
                         <xforms:output value="choose(@selected != 'true','Show','Hide')"/> Books</xforms:label>
                     <xforms:action ev:event="DOMActivate">
-                        <xforms:load if="@selected != 'true'" show="embed" targetid="subform" resource="books.xml"/>
+                        <xforms:load if="@selected != 'true'" show="embed" targetid="subform" resource="/exist/rest/db/apps/XSLTForms-Demo/data/books.xml"/>
                         <xforms:unload if="@selected = 'true'" targetid="subform"/>
                         <xforms:setvalue ref="@selected" value=". != 'true'"/>
                     </xforms:action>

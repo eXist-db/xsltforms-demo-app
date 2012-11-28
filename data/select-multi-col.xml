@@ -35,7 +35,7 @@
             <xf:bind nodeset="counties" calculate="concat(../counties1, ' ', ../counties2, ' ', ../counties3, ' ', ../counties4,' ', ../counties5, ' ', ../counties6, ' ',../counties7)"/>
         </xf:model>
         <xf:model id="code-tables">
-            <xf:instance id="MNCountyCode" src="counties.xml"/>
+            <xf:instance id="MNCountyCode" src="/exist/rest/db/apps/XSLTForms-Demo/data/counties.xml"/>
         </xf:model>
     </head>
     <body>
@@ -98,6 +98,8 @@
                 </xf:select>
             </div>
         </div>
+        <br/>
+        <br/>
         <xf:output ref="counties">
             <xf:label>Counties selected: </xf:label>
         </xf:output>
