@@ -13,16 +13,13 @@ import module namespace config="http://exist-db.org/xquery/apps/config" at "conf
  : @param $model a map containing arbitrary data - used to pass information between template calls
  :)
 
-declare function app:list-examples($node as node(), $model as map(*)) {    
-            for $example in doc(concat($config:app-data, "/examples.xml"))//example
-                (:let $log := util:log("DEBUG", ("##$example): ", $example)):)
-                let $form-id := $example/@id/string()
-                (:let $log := util:log("DEBUG", ("##$form-id-app): ", $form-id)):)
+declare function app:list-examples($node as node(), $model as map(*), $group as xs:string) {    
+            for $example in doc(concat($config:app-data, "/examples.xml"))//example[group eq $group]
+                let $form := $example/document-name/text()
                 let $title := $example/title
-                (:let $log := util:log("DEBUG", ("##$title): ", $title)):)
-                    order by number($example/group), number($example/order)            
+                    order by number($example/order)            
             return
                 <li>
-                    <a href="modules/form.xq?form-id={$form-id}" target="_blank">{ $title/text() }</a>
+                    <a href="modules/form.xq?form={$form}" target="_blank">{ $title/text() }</a>
                 </li>    
 };

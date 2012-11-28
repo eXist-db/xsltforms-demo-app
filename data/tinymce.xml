@@ -49,6 +49,8 @@
             </trigger>
             <textarea ref="richtext" class="large-textarea" mediatype="application/xhtml+xml"/>
         </group>
+        <br/>
+        <br/>
         <table>
             <tr>
                 <td>Raw resulting value: </td>

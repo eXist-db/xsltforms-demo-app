@@ -9,7 +9,7 @@
     <copyright>true</copyright>
     <type>application</type>
     <target>XSLTForms-Demo</target>
-    <prepare>pre-install.xql</prepare>
+    <prepare/>
     <finish/>
     <deployed>2012-11-21T11:56:06.972+01:00</deployed>
 </meta>

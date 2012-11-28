@@ -5,7 +5,7 @@
         <xf:model>
             <xf:instance xmlns="" id="project">
                 <project name="My house building project" company="Myself LLC" webLink="www.myselfllc.net" view-date="2009-01-02" view-index="0" gantt-divider-location="369" resource-divider-location="322" version="2.0">
-                    <description><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.]]></description>
+                    <description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</description>
                     <view zooming-state="default:6" id="gantt-chart"/>
                     <view id="resource-table">
                         <field id="0" name="Name" width="54" order="0"/>
@@ -57,7 +57,7 @@
                             </task>
                             <task id="13" name="Furniture selection" color="#99ccff" meeting="false" start="2009-01-23" duration="5" complete="0" priority="1" expand="true"/>
                             <task id="14" name="Equipment planning" color="#99ccff" meeting="false" start="2009-01-23" duration="5" complete="0" priority="1" expand="true">
-                                <notes><![CDATA[Embedded devices, kitchen, washing machine, dryer etc]]></notes>
+                                <notes>Embedded devices, kitchen, washing machine, dryer etc</notes>
                             </task>
                         </task>
                         <task id="7" name="Construction phase" color="#99ccff" meeting="false" start="2009-02-09" duration="76" complete="0" priority="1" expand="true">
@@ -173,7 +173,7 @@
             <xf:bind nodeset="instance('intermediate')/width" calculate="(instance('intermediate')/lastday - days-from-date(instance('project')/@view-date)) * instance('params')/day_width"/>
         </xf:model>
         <script type="text/javascript">
-<![CDATA[
+
 			function lastday(starts, durations) {
 				var sarr = starts.split(",");
 				var darr = durations.split(",");
@@ -186,7 +186,7 @@
 				}
 				return last;
 			}
-]]></script>
+</script>
     </head>
     <body>
         <h1>SVG Gantt</h1>
