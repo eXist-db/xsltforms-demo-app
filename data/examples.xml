@@ -149,4 +149,12 @@
         <description>How the switch and case statements can be used to simulate a multi-part form
             with a row of horizontal tabs at the top of the form.</description>
     </example>
+    <example id="22">
+        <title>Vertical Tab Form Navigation</title>
+        <document-name>vertical-tabs.xhtml</document-name>
+        <group>5</group>
+        <order>2</order>
+        <description>How the switch and case statements can be used to simulate a multi-part form
+            with a row of vertical tabs at the left side of the form.</description>
+    </example>
 </examples>
