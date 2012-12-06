@@ -1,7 +1,5 @@
-<html
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xf="http://www.w3.org/2002/xforms"
-    xmlns:ev="http://www.w3.org/2001/xml-events">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
     <head>
         <title>XForms Colored Horizontal Tab Menu</title>
         <style>
@@ -10,6 +8,9 @@
         body {font-family: Arial, Helvetica, sans-serif;}
         
         /* instructions for styling the horizontal tabs at the top of the form */
+        #horiz-tab-menu {
+        padding-bottom: 2px;
+        }
         #horiz-tab-menu xf|trigger {
             border-left: gray solid 1px;
             border-top: gray solid 1px;
@@ -17,7 +18,7 @@
             border-bottom: 0px; /* so the tab blends into the region under the tab */
             font-weight: bold;
             font-size: .9em;
-            /* the spacing between the tabs */
+            /* spacing between the tabs */
             margin-right: 9px;
             padding: 3px;
             /* round corners at the top of the tab - does not work on older versions of IE */
@@ -29,12 +30,11 @@
             border-top-right-radius: 5px;
                     }
 
-        /* properties common to the swapped views */
+        /* properties common to all the swapped views */
         #div-1,#div-2,#div-3 {
              width: 500px;
              padding: 5px;
              border-left: solid gray 1px;
-             border-top: solid white 1px;
              border-right: solid gray 1px;
              border-bottom: solid gray 1px;
         }
@@ -51,19 +51,19 @@
         </style>
     </head>
     <body>
-        <h2>Using case and switch to simulate a tab-view.</h2>
+        <h2>Using switch and case to simulate a tab-view.</h2>
         <div id="horiz-tab-menu">
             <xf:trigger id="tab-1" appearance="minimal">
                 <xf:label>Tab 1 Title</xf:label>
-                <xf:toggle case="case-1" ev:event="DOMActivate" />
+                <xf:toggle case="case-1" ev:event="DOMActivate"/>
             </xf:trigger>
             <xf:trigger id="tab-2" appearance="minimal">
                 <xf:label>Tab 2 Title</xf:label>
-                <xf:toggle case="case-2" ev:event="DOMActivate" />
+                <xf:toggle case="case-2" ev:event="DOMActivate"/>
             </xf:trigger>
             <xf:trigger id="tab-3" appearance="minimal">
                 <xf:label>Tab 3 Title</xf:label>
-                <xf:toggle case="case-3" ev:event="DOMActivate" />
+                <xf:toggle case="case-3" ev:event="DOMActivate"/>
             </xf:trigger>
         </div>
         <xf:switch>
