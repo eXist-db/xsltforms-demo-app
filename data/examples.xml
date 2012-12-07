@@ -193,6 +193,20 @@
         <description>Contributed by Stephen Cameron</description>
     </example>
     <example>
+        <title>Horizontal Tab Form Navigation</title>
+        <document-name>horizontal-tabs.xhtml</document-name>
+        <group>2</group>
+        <description>How the switch and case statements can be used to simulate a multi-part form
+            with a row of horizontal tabs at the top of the form.</description>
+    </example>
+    <example>
+        <title>Vertical Tab Form Navigation</title>
+        <document-name>vertical-tabs.xhtml</document-name>
+        <group>2</group>
+        <description>How the switch and case statements can be used to simulate a multi-part form
+            with a row of vertical tabs at the left side of the form.</description>
+    </example>
+    <example>
         <title>Colored Flags</title>
         <document-name>flags.xml</document-name>
         <group>3</group>
@@ -216,19 +230,4 @@
         <group>3</group>
         <description/>
     </example>
-    <example>
-        <title>Horizontal Tab Form Navigation</title>
-        <document-name>horizontal-tabs.xhtml</document-name>
-        <group>5</group>
-        <description>How the switch and case statements can be used to simulate a multi-part form
-            with a row of horizontal tabs at the top of the form.</description>
-    </example>
-    <example>
-        <title>Vertical Tab Form Navigation</title>
-        <document-name>vertical-tabs.xhtml</document-name>
-        <group>5</group>
-        <description>How the switch and case statements can be used to simulate a multi-part form
-            with a row of vertical tabs at the left side of the form.</description>
-    </example>
 </examples>
-
