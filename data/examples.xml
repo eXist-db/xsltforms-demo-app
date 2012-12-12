@@ -207,6 +207,13 @@
             with a row of vertical tabs at the left side of the form.</description>
     </example>
     <example>
+        <title>Cascading Selects</title>
+        <document-name>cascading-selects.xhtml</document-name>
+        <group>2</group>
+        <description>How to change the content of one selection list based
+        on the value of a prior selection list.</description>
+    </example>
+    <example>
         <title>Colored Flags</title>
         <document-name>flags.xml</document-name>
         <group>3</group>
