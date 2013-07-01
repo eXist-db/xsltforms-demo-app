@@ -3,7 +3,7 @@ xquery version "1.0";
 declare namespace html="http://www.w3.org/1999/xhtml";
 declare namespace xf="http://www.w3.org/2002/xforms";
 
-import module namespace config="http://exist-db.org/xquery/apps/config" at "config.xqm";
+import module namespace config="http://exist-db.org/apps/xsltforms-demo/config" at "config.xqm";
 
 (:~
 : Here $node is the document or XML fragment to work on, $new-node is the new element to insert, $element-name-to-check is which other element to use as a reference for inserting $new-node, and $location gives the option of inserting $new-node before, after, or as the first or last child of $element-name-to-check. $location accepts four values: 'before', 'after', 'first-child', and 'last-child' (if another value is given, $element-name-to-check is removed).

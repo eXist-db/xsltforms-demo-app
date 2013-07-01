@@ -1,9 +1,9 @@
 xquery version "3.0";
 
-module namespace app="http://exist-db.org/xquery/app";
+module namespace app="http://exist-db.org/apps/xsltforms-demo";
 declare namespace html="http://www.w3.org/1999/xhtml";
 
-import module namespace config="http://exist-db.org/xquery/apps/config" at "config.xqm";
+import module namespace config="http://exist-db.org/apps/xsltforms-demo/config" at "config.xqm";
 
 (:~
  : List the examples described in examples.xml.
