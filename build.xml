@@ -1,10 +1,7 @@
 <project default="all" name="XSLTForms Demo">
-    <property file="local.build.properties"/>
-    <property file="build.properties"/>
     <property name="project.app" value="xsltforms-demo"/>
-    <property name="project.version" value="0.1.4"/>
-    <property name="build" value="./build"/>
-    <property name="data" value="./data"/>
+    <property name="project.version" value="1.0.0"/>
+    <property name="build" value="build"/>
     <property name="server.url" value="http://demo.exist-db.org/exist/apps/public-repo/public/"/>
 
     <condition property="git.commit" value="${git.commit}" else="">
@@ -26,7 +23,7 @@
             </filterset>
         </copy>
         <zip basedir="." destfile="${build}/${project.app}-${project.version}${git.commit}.xar">
-            <exclude name="${build}/*"/>
+            <exclude name="${build}/**"/>
             <exclude name=".git*"/>
             <exclude name="*.tmpl"/>
             <exclude name="*.properties"/>
