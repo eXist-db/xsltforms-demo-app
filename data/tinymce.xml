@@ -10,7 +10,7 @@
 				width: 500px;
 			}
 		</style>
-		<script type="text/javascript" src="../../xsltforms/scripts/tinymce_4.7.1/tinymce.min.js" data-uri="http://www.tinymce.com" data-version="4.7.1">/* */</script>
+		<script type="text/javascript" src="xsltforms/scripts/tinymce_4.7.1/tinymce.min.js" data-uri="http://www.tinymce.com" data-version="4.7.1">/* */</script>
 		<model xmlns="http://www.w3.org/2002/xforms">
 			<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.agencexml.com/xsltforms/rte">
 				<simpleType name="standardHTML">
@@ -29,10 +29,10 @@
 								valid_elements:  "p,i,strong,em,elem-a,elem-b",
 								setup: function(editor) {
 									function insertElem(gi) {
-										var s = "&lt;" + gi + "&gt;"
+										var s = "&lt;" + gi + "&gt;" 
 											+ editor.selection.getContent()
 											+ "&lt;/" + gi + "&gt;";
-										editor.insertContent(s);
+										editor.insertContent(s); 
 									}
 									editor.addButton("insertelema", {
 										text: "elem-a",
