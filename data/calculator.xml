@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xf="http://www.w3.org/2002/xforms">
+<?xml-stylesheet href="../../xsltforms/xsltforms.xsl" type="text/xsl"?>
+<?xsltforms-options debug="yes"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xf="http://www.w3.org/2002/xforms"
+      xmlns:ev="http://www.w3.org/2001/xml-events">
     <head>
         <title>Calculator</title>
-        <meta name="description" content="XForms calculator."/>
-        <meta name="keywords" content="AJAX, Javascript, Web, XForms, XSLTForms, Exemples, Samples, Calculator"/>
+    	<meta name="description" content="XForms calculator."/>
+    	<meta name="keywords" content="AJAX, Javascript, Web, XForms, XSLTForms, Exemples, Samples, Calculator"/>
         <style type="text/css">
              div.xforms-field div.xforms-control {
                  margin-left	     : 3em;
@@ -26,17 +29,13 @@
         <h3>Calculator</h3>
         <table border="1">
             <tr>
-                <td align="right" colspan="6">
-                    <xf:output ref="screen"/>
-                </td>
+                <td align="right" colspan="6"><xf:output ref="screen"/></td>
             </tr>
             <tr>
                 <td>
-                    <xf:output ref="memory">
-                        <xf:label>M:</xf:label>
-                    </xf:output>
+                    <xf:output ref="memory"><xf:label>M:</xf:label></xf:output>
                 </td>
-                <td colspan="3"/>
+                <td colspan="3"></td>
                 <td colspan="2">
                     <xf:trigger>
                         <xf:label>Clear</xf:label>
@@ -46,7 +45,7 @@
                             <xf:setvalue ref="result">0</xf:setvalue>
                             <xf:setvalue ref="screen">0</xf:setvalue>
                             <xf:setvalue ref="screenbuffer">0</xf:setvalue>
-                            <xf:toggle case="add"/>
+                	        <xf:toggle case="add"/>
                         </xf:action>
                     </xf:trigger>
                 </td>
@@ -95,7 +94,7 @@
                         </xf:action>
                     </xf:trigger>
                 </td>
-                <td/>
+                <td></td>
             </tr>
             <tr>
                 <td>
@@ -126,7 +125,7 @@
                         </xf:action>
                     </xf:trigger>
                 </td>
-                <td>
+            	<td>
                     <xf:trigger>
                         <xf:label>6</xf:label>
                         <xf:action ev:event="DOMActivate">
@@ -135,7 +134,7 @@
                         </xf:action>
                     </xf:trigger>
                 </td>
-                <td>
+            	<td>
                     <xf:trigger>
                         <xf:label>*</xf:label>
                         <xf:action ev:event="DOMActivate">
@@ -173,8 +172,8 @@
                             <xf:setvalue ref="screen" value="../screenbuffer"/>
                         </xf:action>
                     </xf:trigger>
-                </td>
-                <td>
+               </td>
+               <td>
                     <xf:trigger>
                         <xf:label>3</xf:label>
                         <xf:action ev:event="DOMActivate">
@@ -189,7 +188,7 @@
                         <xf:action ev:event="DOMActivate">
                             <xf:setvalue ref="first" value="../screen"/>
                             <xf:setvalue ref="screenbuffer" value="0"/>
-                            <xf:toggle case="subtract"/>
+                	        <xf:toggle case="subtract"/>
                         </xf:action>
                     </xf:trigger>
                 </td>
@@ -247,7 +246,7 @@
                                     <xf:setvalue ref="screenbuffer" value="0"/>
                                 </xf:action>
                             </xf:trigger>
-                        </xf:case>
+                    	</xf:case>
                         <xf:case id="subtract" selected="false">
                             <xf:trigger>
                                 <xf:label>=</xf:label>
@@ -258,7 +257,7 @@
                                     <xf:setvalue ref="screenbuffer" value="0"/>
                                 </xf:action>
                             </xf:trigger>
-                        </xf:case>
+                    	</xf:case>
                         <xf:case id="multiply" selected="false">
                             <xf:trigger>
                                 <xf:label>=</xf:label>
@@ -269,7 +268,7 @@
                                     <xf:setvalue ref="screenbuffer" value="0"/>
                                 </xf:action>
                             </xf:trigger>
-                        </xf:case>
+                    	</xf:case>
                         <xf:case id="divide" selected="false">
                             <xf:trigger>
                                 <xf:label>=</xf:label>
@@ -280,7 +279,7 @@
                                     <xf:setvalue ref="screenbuffer" value="0"/>
                                 </xf:action>
                             </xf:trigger>
-                        </xf:case>
+                    	</xf:case>
                     </xf:switch>
                 </td>
             </tr>

@@ -4,12 +4,19 @@
     <author>Alain Couthures</author>
     <author>Jens Østergaard Petersen</author>
     <website>http://www.agencexml.com/xsltforms</website>
-    <status>alpha</status>
+    <status>stable</status>
     <license>GNU-LGPL</license>
     <copyright>true</copyright>
     <type>application</type>
-    <target>XSLTForms-Demo</target>
+    <target>xsltforms-demo</target>
     <prepare/>
     <finish/>
     <deployed/>
+    <changelog>
+        <change version="1.0.0">
+            <ul xmlns="http://www.w3.org/1999/xhtml">
+                <li>Update to XSLTForms 1.0, released October 2017</li>
+            </ul>
+        </change>
+    </changelog>
 </meta>
